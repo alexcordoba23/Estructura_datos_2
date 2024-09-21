@@ -21,11 +21,11 @@ class ListaAnimales:
         else:
             actual = self.cabeza
             while actual.siguiente is not None:
-                if actual.animal.nombre == nuevo_animal.nombre:  # Evitar duplicados
+                if actual.animal.nombre == nuevo_animal.nombre:  
                     print("Este animal ya está en la lista.")
                     return
                 actual = actual.siguiente
-            if actual.animal.nombre != nuevo_animal.nombre:  # Verificar último nodo
+            if actual.animal.nombre != nuevo_animal.nombre:  
                 actual.siguiente = Nodo(nuevo_animal)
             else:
                 print("Este animal ya está en la lista.")
